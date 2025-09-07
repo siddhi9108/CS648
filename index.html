@@ -1,54 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Welcome to Vecta Corp. – 24/7 365 turnkey vSolutions for your agile ebusiness"</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vecta Corporation — Scalable Solutions for Growth</title>
+  <meta name="description" content="Vecta Corporation provides scalable business solutions that drive revenue, manage costs, and improve user satisfaction through vProspect, vConvert, and vRetain." />
+  <style>
+    /* Minimal, readable defaults */
+    :root { --max: 72rem; --gap: 1rem; --fg: #222; --muted: #555; --accent: #0b63ce; --bg: #fff; --soft: #f6f8fa; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--fg);
+      background: var(--bg);
+    }
+    header {
+      background: linear-gradient(180deg, #0b63ce, #084a98);
+      color: #fff;
+      padding: 3rem 1rem;
+    }
+    header .wrap, main .wrap, footer .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1rem; }
+    nav ul { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+    nav a { color: #fff; text-decoration: none; font-weight: 600; }
+    nav a:focus, nav a:hover { text-decoration: underline; }
+    h1, h2, h3 { line-height: 1.2; margin: 0 0 .5rem; }
+    .lead { font-size: 1.15rem; color: #eef3ff; max-width: 60ch; }
+    main { padding: 2rem 0 3rem; }
+    section { padding: 2rem 0; border-top: 1px solid #e5e7eb; }
+    .grid { display: grid; gap: 1.25rem; }
+    .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card {
+      background: var(--soft);
+      border: 1px solid #e5e7eb;
+      border-radius: .5rem;
+      padding: 1rem;
+    }
+    .muted { color: var(--muted); }
+    blockquote {
+      margin: 0; padding: 1rem 1.25rem; background: #fff; border-left: .25rem solid var(--accent); border-radius: .25rem;
+    }
+    cite { display: block; margin-top: .75rem; font-style: normal; color: var(--muted); }
+    address { font-style: normal; }
+    a[href^="tel:"] { white-space: nowrap; }
+    footer { background: #0e1116; color: #cbd5e1; padding: 2rem 0; }
+    footer a { color: #cbd5e1; }
+    /* Skip link for accessibility */
+    .skip-link {
+      position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden;
+    }
+    .skip-link:focus { position: static; width: auto; height: auto; padding: .5rem; background: #fff; color: #000; }
+  </style>
 </head>
 <body>
-<h1>Welcome</h1>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<p>With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.
+  <header role="banner">
+    <div class="wrap">
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#team">Management</a></li>
+        </ul>
+      </nav>
+      <h1>Welcome to Vecta Corporation</h1>
+      <p class="lead">
+        Scalable business solutions to grow revenue, manage costs, and boost user satisfaction—24/7/365.
+      </p>
+    </div>
+  </header>
 
-Our Solutions 
+  <main id="main">
+    <div class="wrap">
+      <!-- About -->
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About Vecta Corporation</h2>
+        <p>
+          With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach centers on three essential growth pillars: reaching prospects, converting prospects to customers, and retaining those customers through memorable, positive user experiences.
+        </p>
+      </section>
 
-vProspect 2.0
-Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.
+      <!-- Solutions -->
+      <section id="solutions" aria-labelledby="solutions-title">
+        <h2 id="solutions-title">Our Solutions</h2>
+        <div class="grid cols-3">
+          <article class="card" aria-labelledby="vprospect-title">
+            <h3 id="vprospect-title">vProspect 2.0</h3>
+            <p class="muted">Define and research your target audience, develop a strategy to reach them, and present a strong, memorable brand.</p>
+          </article>
 
-vConvert 2.0
-Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.
+          <article class="card" aria-labelledby="vconvert-title">
+            <h3 id="vconvert-title">vConvert 2.0</h3>
+            <p class="muted">Design an intuitive information architecture that enables prospects to interact with your company at a highly interactive level.</p>
+          </article>
 
-vRetain 1.0
-Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.
+          <article class="card" aria-labelledby="vretain-title">
+            <h3 id="vretain-title">vRetain 1.0</h3>
+            <p class="muted">Deepen existing customer relationships to improve productivity, grow revenue, and maximize loyalty.</p>
+          </article>
+        </div>
+      </section>
 
-Client Testimonials
+      <!-- Testimonials -->
+      <section id="testimonials" aria-labelledby="testimonials-title">
+        <h2 id="testimonials-title">Client Testimonials</h2>
 
-Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.
+        <article class="card" aria-labelledby="quote-ferris">
+          <blockquote id="quote-ferris">
+            “Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism they provide. This commitment has increased both our income and exposure exponentially.”
+            <cite>— Ferris Finkelstein, Founder &amp; CEO, Dorknozzle</cite>
+          </blockquote>
+        </article>
 
-Ferris Finkelstein
-Founder and CEO
-Dorknozzle
+        <article class="card" aria-labelledby="quote-justin">
+          <blockquote id="quote-justin">
+            “Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we’ve received by working with them.”
+            <cite>— Justin Case, CTO, IX Inc.</cite>
+          </blockquote>
+        </article>
+      </section>
 
-Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.
+      <!-- Contact -->
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact Vecta Corporation</h2>
+        <address class="card">
+          <p><strong>Vecta Corporation</strong></p>
+          <p>555 Technology Place<br />San Diego, CA 92115</p>
+          <p>Tel: <a href="tel:+18005555555">(800) 555-5555</a></p>
+        </address>
+      </section>
 
-Justin Case
-CTO
-IX Inc.
+      <!-- Team -->
+      <section id="team" aria-labelledby="team-title">
+        <h2 id="team-title">Management Team</h2>
+        <ul class="grid">
+          <li class="card"><strong>Agnes</strong> — Vice President, Accounting</li>
+          <li class="card"><strong>Damon</strong> — Director of Development</li>
+          <li class="card"><strong>Herbert</strong> — Director of Human Resources</li>
+          <li class="card"><strong>Mike</strong> — Vice President, Marketing</li>
+          <li class="card"><strong>Ferris</strong> — Founder &amp; CEO</li>
+        </ul>
+      </section>
+    </div>
+  </main>
 
-Contact Vecta Corporation
+  <footer role="contentinfo">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Vecta Corporation. All rights reserved.</p>
+    </div>
+  </footer>
 
-Vecta Corporation
-555 Technology Place
-San Diego, CA 92115
-Tel. (800) 555-5555
-
-Management Team
-
-Agnes, Vice President, Accounting
-Damon, Director of Development
-Herbert, Director of Human Resources
-Mike, Vice President, Marketing
-Ferris, Founder and CEO  
-</p>
+  <script>
+    // Keep the copyright year fresh
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
