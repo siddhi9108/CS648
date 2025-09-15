@@ -1,0 +1,83 @@
+/* task 2  */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    background-color: #EDEDED;
+}
+
+
+/* task 3  */
+.heading {
+    color: red;
+    border: 1px solid #939CA4;
+}
+
+
+/* task 4  */
+p:first-of-type::first-letter {
+    font-size: 30px;
+}
+
+
+/* task 5 */
+.solution {
+    color: #CC1C0D;
+    font-weight: bold;
+}
+
+
+/* task 6  */
+#testimonial1,
+#testimonial2 {
+    font-style: italic;
+    margin: 50px;
+}
+
+
+/* task 7  */
+a[href^="http"] {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Unvisited state */
+a[href^="http"]:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Visited state */
+a[href^="http"]:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+/* Hover state */
+a[href^="http"]:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+/* Active state */
+a[href^="http"]:active {
+    color: red;
+    text-decoration: none;
+}
+
+
+/* task 8  */
+.list-items li {
+    list-style: none;
+}
+
+
+/* task 9  */
+.list-items li:first-child {
+    color: blue;
+}
+
+/* task 10 */
+.list-items li:last-child {
+    color: red;
+}
