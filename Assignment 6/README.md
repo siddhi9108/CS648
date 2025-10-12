@@ -1,3 +1,4 @@
-Assignment-6-CS648
+Assignment 6 (CS648)
 
-Shivam Desale
+Siddhi Amilkanthwar
+131379362
