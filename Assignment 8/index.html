@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 08</title>
+    <script src="js/employee-management.js"></script>
+
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+        }
+
+        .inputFields
+        {
+            border: 1px solid rgb(92, 168, 222);
+            padding: 3px;
+        }
+
+        .labelFontSize
+        {
+            font-size: 15px;
+        }
+
+        #addButton
+        {
+            float: right;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            color: #FFFFFF;
+            background-color: rgb(92, 168, 222);
+            border: 1px solid #000000;
+        }
+
+        #employeeCount
+        {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .errorMsg
+        {
+            color: #FF0000;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        #employeeTable
+        {
+            width: 500px;
+            height: auto;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        #employeeTable th {
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            background-color: rgb(92, 168, 222);
+            padding: 5px;
+        }
+
+        #employeeTable td {
+            border: 1px solid #FFFFFF;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        #employeeTable tr:nth-child(2n) {
+            background-color: rgb(198, 230, 254);
+        }
+
+        #employeeTable tr:nth-child(2n+1) {
+            background-color: rgb(234, 240, 244);
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h3>The Employee Management Application</h3> 
+
+    <div id="addEmployeeTitle"><b>Add Employee</b></div>
+    <br><br>
+    <form id="employeeForm" onsubmit="return false">
+        <table>
+            <tr>
+                <td class="labelFontSize">Name: </td>
+                <td>&nbsp;<input type="text" name="employeeName" id="employeeName" class="inputFields" /></td>
+                <td>&nbsp;<span id="nameError" class="errorMsg"></span></td>
+            </tr>
+            <tr>
+                <td class="labelFontSize">Title: </td>
+                <td>&nbsp;<input type="text" name="title" id="title" class="inputFields" /></td>
+                <td>&nbsp;<span id="titleError" class="errorMsg"></span></td>
+            </tr>
+            <tr>
+                <td class="labelFontSize">Extension: </td>
+                <td>&nbsp;<input type="text" name="extension" id="extension" class="inputFields" /></td>
+                <td>&nbsp;<span id="extensionError" class="errorMsg"></span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>&nbsp;<button id="addButton">Add</button></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <div id="employeeCount"></div>
+    <br>
+    <div id="employeeTableHolder">
+        <table id="employeeTable">
+            <tr>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Extension</th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
